@@ -2873,7 +2873,6 @@ Portfolio
 
 .blog-list article {
 	text-align: center;
-	border-bottom: 1px solid #d1d5db;
 	padding-bottom: 100px;
 	margin-bottom: 100px;
 }
@@ -3012,6 +3011,7 @@ Portfolio
 .blog-list-3.blog-list article {
 	padding-bottom: 20px;
 	margin-bottom: 50px;
+	margin: auto;
 }
 
 .admin-info {
@@ -3055,6 +3055,14 @@ Portfolio
 	text-transform: none;
 	font-family: 'Playfair Display', serif;
 	margin-left: 30px;
+}
+
+.col-md-9 {
+	position: relative;
+	background: #fff;
+	padding: 0px;
+	margin: auto;
+	width: 70%;
 }
 
 /*=======================================================

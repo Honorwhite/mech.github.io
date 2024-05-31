@@ -559,6 +559,26 @@
 	<script src="js/owl.carousel.min.js"></script>
 
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+	<script>
+		$(document).ready(function () {
+			let url = new URL(window.location.href);
+			let searchParams = new URLSearchParams(url.search);
+
+			if (searchParams.size > 0) {
+				let filterValue = searchParams.get("filter");
+				let newValue = '.' + filterValue;
+
+				if ($(newValue)[0]) {
+
+					$(".filter-item").removeClass("active");
+					$('.filter-item[data-filter="' + filterValue + '"]').addClass("active");
+
+					$(".gallery-item").removeClass("show").addClass("hide");
+					$(newValue).removeClass("hide");
+				}
+			}
+		});
+	</script>
 	<script type="text/javascript" src="rs-plugin/js/jquery.tp.t.min.js"></script>
 	<script type="text/javascript" src="rs-plugin/js/jquery.tp.min.js"></script>
 </body>
