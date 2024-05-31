@@ -1529,7 +1529,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	top: 0px;
 	left: 0px;
 	position: relative;
-	transition: 0.0s ease-in-out;
+	transition: 0s ease-in-out;
 }
 
 .arrival-block .item:hover .img-1 {
