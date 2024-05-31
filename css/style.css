@@ -3061,8 +3061,9 @@ Portfolio
 	position: relative;
 	background: #fff;
 	padding: 0px;
-	margin: auto;
 	width: 70%;
+	margin-left: auto;
+	margin-right: 0;
 }
 
 /*=======================================================
@@ -4266,7 +4267,7 @@ Portfolio
 .sub-bnr {
 	background: url(../images/sub-bnr-bg.jpg) no-repeat;
 	background-size: cover !important;
-	min-height: 610px;
+	min-height: 200px;
 	text-align: center;
 	position: relative;
 }
@@ -4274,7 +4275,7 @@ Portfolio
 .sub-bnr2 {
 	background: url(../images/sub-bnr-bg2.jpg) no-repeat;
 	background-size: cover !important;
-	min-height: 610px;
+	min-height: 200px;
 	text-align: center;
 	position: relative;
 }
@@ -4282,7 +4283,7 @@ Portfolio
 .sub-bnr3 {
 	background: url(../images/sub-bnr-bg3.jpg) no-repeat;
 	background-size: cover !important;
-	min-height: 610px;
+	min-height: 300px;
 	text-align: center;
 	position: relative;
 }
