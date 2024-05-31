@@ -1529,11 +1529,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 	top: 0px;
 	left: 0px;
 	position: relative;
-	-webkit-transition: 0.4s ease-in-out;
-	-moz-transition: 0.4s ease-in-out;
-	-ms-transition: 0.4s ease-in-out;
-	-o-transition: 0.4s ease-in-out;
-	transition: 0.4s ease-in-out;
+	transition: 0.0s ease-in-out;
 }
 
 .arrival-block .item:hover .img-1 {
@@ -1544,6 +1540,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 .arrival-block .item .img-2 {
 	position: absolute;
 	left: 100%;
+	filter: grayscale();
 }
 
 .arrival-block .item:hover .img-2 {
