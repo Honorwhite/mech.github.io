@@ -3063,7 +3063,7 @@ Portfolio
 	padding: 0px;
 	width: 70%;
 	margin-left: auto;
-	margin-right: 0;
+	margin-right: auto;
 }
 
 /*=======================================================
@@ -3875,7 +3875,7 @@ Portfolio
 }
 
 .knowledge-share li:nth-child(1) {
-	padding-right: 100px;
+	padding-right: 0px;
 }
 
 .knowledge-share li:nth-child(2) {
@@ -3883,7 +3883,7 @@ Portfolio
 }
 
 .knowledge-share li:nth-child(3) {
-	padding-right: 100px;
+	padding-right: 0px;
 }
 
 .knowledge-share li:nth-child(4) {
