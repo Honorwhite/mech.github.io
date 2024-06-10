@@ -298,11 +298,12 @@ a:focus {
 	letter-spacing: 1px;
 	position: relative;
 	z-index: 1;
+	border-radius: 10px;
 }
 
 .btn:hover {
 	background: #fff;
-	color: #f3bc58;
+	color: #cf9c3d;
 }
 
 .btn-white {
@@ -2159,7 +2160,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 
 .inner-info p {
-	font-size: 12px;
+	font-size: 16px;
 	margin: 15px 0;
 	margin-bottom: 0px;
 }
