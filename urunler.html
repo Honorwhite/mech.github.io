@@ -234,13 +234,31 @@
 						<span class="filter-item" data-filter="keratin">KERATİN</span>
 						<span class="filter-item" data-filter="tonik">TONİK</span>
 						<span class="filter-item" data-filter="peel">PEELİNG</span>
-						<span class="filter-item" data-filter="dokk">DÖKÜLME KARŞITI</span>
+						<span class="filter-item" data-filter="dokk">SAKAL BAKIM</span>
 						<span class="filter-item" data-filter="boya">BOYA SİLİCİ</span>
 					</div>
 				</div>
+				<div class="gallery-item keratin hide" data-id="item2" style="width: 100%;">
+					<div class="gallery-item-inner">
+						<img src="images/keratincover.jpg" alt="Keratin">
+					</div>
+				</div>
+				<div class="gallery-item hacim hide" data-id="item2" style="width: 100%;">
+					<div class="gallery-item-inner">
+						<img src="images/hacimlendiricicover.jpg" alt="hacimlendirici">
+					</div>
+				</div>
+				<div class="gallery-item keci hide" data-id="item2" style="width: 100%;">
+					<div class="gallery-item-inner">
+						<img src="images/kecisutucover.jpg" alt="keçi sütü">
+					</div>
+				</div>
+				<div class="gallery-item peel hide" data-id="item2" style="width: 100%;">
+					<div class="gallery-item-inner">
+						<img src="images/peelingcover.jpg" alt="peeling">
+					</div>
+				</div>
 				<div class="row">
-
-
 					<div class="gallery-item tonik">
 						<div class="gallery-item-inner">
 							<a href="sac_tonigi.html">
@@ -281,7 +299,7 @@
 		</div>
 	</div>
 	</div>
-	<div class="gallery-item keratin">
+	<div class="gallery-item dokk">
 		<div class="gallery-item-inner">
 			<a href="keratin_ve_kolajen_bakim.html">
 				<img src="images/urun6.jpg" alt="KERATİN VE COLLAGEN SAKAL BAKIM YAĞI">
@@ -409,7 +427,7 @@
 	</div>
 
 	</div>
-	<div class="gallery-item dokk">
+	<div class="gallery-item keratin">
 		<div class="gallery-item-inner">
 			<a href="dokulme_karsiti.html">
 				<img src="images/urun18.jpg" alt="DÖKÜLME KARŞITI ŞAMPUAN">
@@ -440,6 +458,7 @@
 		</div>
 	</div>
 	</section>
+	<!-----
 	<script>
 		const filterContainer = document.querySelector(".gallery-filter"),
 			galleryItems = document.querySelectorAll(".gallery-item");
@@ -450,11 +469,38 @@
 				event.target.classList.add("active");
 				const filterValue = event.target.getAttribute("data-filter");
 				galleryItems.forEach((item) => {
-					if (item.classList.contains(filterValue) || filterValue === 'all') {
+					else {
+						item.classList.remove("show");
+						item.classList.add("hide");
+					}
+				});
+			}
+		});
+	</script>
+---->
+	<script>
+		const filterContainer = document.querySelector(".gallery-filter"),
+			galleryItems = document.querySelectorAll(".gallery-item");
+
+		filterContainer.addEventListener("click", (event) => {
+			if (event.target.classList.contains("filter-item")) {
+				filterContainer.querySelector(".active").classList.remove("active");
+				event.target.classList.add("active");
+				const filterValue = event.target.getAttribute("data-filter");
+
+				galleryItems.forEach((item) => {
+					if (filterValue === "all") {
+						if (item.getAttribute("data-id") === "item2") {
+							item.classList.remove("show");
+							item.classList.add("hide");
+						} else {
+							item.classList.remove("hide");
+							item.classList.add("show");
+						}
+					} else if (item.classList.contains(filterValue)) {
 						item.classList.remove("hide");
 						item.classList.add("show");
-					}
-					else {
+					} else {
 						item.classList.remove("show");
 						item.classList.add("hide");
 					}
@@ -484,13 +530,10 @@
 						<li><a href="https://www.trendyol.com/magaza/mech-perfect-line-m-573826?sst=0"> Trendyol</a>
 						</li>
 						<li><a href="https://www.instagram.com/mechperfectline/"> Instagram</a></li>
-						<li><a href="https://meckm.com/"> Meç Kuaför Market</a></li>
 					</ul>
 				</div>
 				<!-- ABOUT Location -->
 				<div class="col-md-3">
-					<p><i class="icon-pointer"></i>Depo: İstiklal Mah, 4010 SK. No: 6 <br> Seyhan Adana</p>
-					</p>
 					<p><i class="icon-call-end"></i>0 (850) 309 36 09</p>
 					<p><i class="icon-envelope"></i>info@meckm.com</p>
 				</div>
@@ -532,7 +575,6 @@
 	<script src="js/jquery.lighter.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 
-	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 	<script>
 		$(document).ready(function () {
 			let url = new URL(window.location.href);
