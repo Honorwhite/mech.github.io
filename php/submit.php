@@ -15,7 +15,7 @@ $to = 'info@hashtagmedya.com';
     if (isset($_POST['message'])) { $message = $_POST['message']; }
 	
 	// Construct subject of the email
-	$subject = 'Medikal Contact Iquery ' . $name;
+	$subject = "\r\n" . $name; "\r\n"
 
 	// Construct email body
 	$body_message .= 'Name: ' . $name . "\r\n";

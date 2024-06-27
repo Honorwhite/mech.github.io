@@ -274,6 +274,15 @@ a:focus {
 
 .light-gray-bg {
 	background: #f7f7f7 !important;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+@media (max-width: 600px) {
+	.light-gray-bg {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 }
 
 .customcolor1 {
@@ -506,8 +515,14 @@ header .navbar {
 
 header .logo {
 	float: left;
-	margin-top: 8px;
+	margin-top: 0px;
 	position: relative;
+}
+
+@media (max-width: 600px) {
+	header .logo {
+		margin-top: 20px !important;
+	}
 }
 
 header .logo img {
@@ -3900,9 +3915,34 @@ Portfolio
 	font-weight: bold;
 }
 
+@media (max-width: 600px) {
+	.knowledge-share .date .huge {
+		line-height: 20px;
+		font-size: 30px;
+	}
+}
+
+.knowledge-share h3 {
+	font-size: 40px;
+}
+
+@media (max-width: 600px) {
+	.knowledge-share h3 {
+		font-size: 20px;
+	}
+}
+
 .knowledge-share p {
 	font-family: 'Playfair Display', serif;
 	max-width: 400px;
+	font-size: 14px;
+	line-height: 2vw;
+}
+
+@media (max-width: 600px) {
+	.knowledge-share p {
+		line-height: 5vw;
+	}
 }
 
 .knowledge-share a {
@@ -4844,7 +4884,6 @@ main {
 	position: relative;
 	z-index: 99;
 	height: 100%;
-	-webkit-overflow-scrolling: touch;
 	background-color: #fff;
 	-webkit-transform: translateZ(0);
 	-moz-transform: translateZ(0);
@@ -5058,7 +5097,6 @@ main {
 .cd-nav .cd-navigation-wrapper {
 	height: 100%;
 	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
 	-webkit-transform: translateZ(0);
 	-moz-transform: translateZ(0);
 	-ms-transform: translateZ(0);
@@ -5477,4 +5515,35 @@ main {
 .cart-ship-info.register .bootstrap-select.btn-group .dropdown-menu li a span.text {
 	display: inline-block;
 	font-size: 13px;
+}
+
+.urunbaslik {
+	font-size: 4vh;
+	font-weight: bold;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.urunbaslik {
+		font-size: 2.5vh;
+	}
+}
+
+.urunalt {
+	font-size: 2vh;
+	font-weight: regular;
+	color: rgb(63, 63, 63);
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+@media(max-width: 600px) {
+	.urunalt {
+		font-size: 1.5vh;
+	}
 }
