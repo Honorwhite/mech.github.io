@@ -328,4 +328,16 @@ jQuery(document).ready(function ($) {
 	});
 });
 
+const openPopupButton = document.getElementById('openPopup');
+const popup = document.getElementById('popup');
+const overlay = document.getElementById('overlay');
 
+openPopupButton.addEventListener('click', () => {
+	popup.style.display = 'block';
+	overlay.style.display = 'block';
+});
+
+overlay.addEventListener('click', () => {
+	popup.style.display = 'none';
+	overlay.style.display = 'none';
+});
