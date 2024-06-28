@@ -513,6 +513,10 @@ header .navbar {
 	float: right;
 }
 
+.logo img {
+	width: 50%;
+}
+
 header .logo {
 	float: left;
 	margin-top: 0px;
@@ -4406,7 +4410,7 @@ Portfolio
 footer p {
 	font-size: 12px;
 	line-height: 26px;
-	color: #999999;
+	color: #c5c5c5;
 }
 
 footer h6 {
@@ -4436,7 +4440,7 @@ footer {
 
 footer li a {
 	font-size: 12px;
-	color: #999999;
+	color: #c5c5c5;
 	line-height: 26px;
 	display: inline-block;
 	width: 100%;
