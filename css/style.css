@@ -3032,6 +3032,13 @@ Portfolio
 	padding-bottom: 20px;
 	margin-bottom: 50px;
 	margin: auto;
+	padding-top: 50px;
+}
+
+@media (max-width: 600px) {
+	.blog-list-3.blog-list article {
+		padding-top: 0px;
+	}
 }
 
 .admin-info {
