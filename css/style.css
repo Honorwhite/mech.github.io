@@ -782,7 +782,7 @@ header .navbar li.active a:before {
 
 .ownmenu .dropdown.megamenu .stars {
 	margin-bottom: 0px;
-	color: #ffe119;
+	color: #cf9c3d;
 	font-size: 11px;
 }
 
@@ -5615,4 +5615,8 @@ button {
 	position: relative;
 	z-index: 1;
 	border-radius: 10px;
+}
+
+button .icon-bar {
+	color: #000000;
 }
