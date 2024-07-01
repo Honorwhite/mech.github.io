@@ -3,7 +3,7 @@
 
 // specify your email here
 
-$to = 'info@hashtagmedya.com';
+$to = 'info@mechperfectline.com.tr';
 
 
 
